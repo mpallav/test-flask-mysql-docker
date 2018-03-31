@@ -1,0 +1,7 @@
+FROM mysql
+MAINTAINER pallav malviya "mpallav@gmail.com"
+ENV MYSQL_ROOT_PASSWORD='mypassword' \
+    MYSQL_DATABASE='userinfo'
+RUN apt-get update -y
+RUN apt-get install -y mysql-client
+ADD myschema.sql /docker-entrypoint-initdb.d
