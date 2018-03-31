@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: 
+       context: .
+       dockerfile: Dockerfile-python-flask
+    ports:
+    - 5000:5000
+    links:
+    - db 
+    hostname: myappserver
+    
+  db:
+    image: mysql
+    environment: 
+       MYSQL_ROOT_PASSWORD: mypassword
+       MYSQL_DATABASE: employee
+    hostname: mydbserver
+    ports:
+    - 3306:3306
