@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class="header">
+ <a href="/"><img src="{{ url_for('static', filename='logo.png')}}" /></a>
+ <a href="/"><h1>Welcome to Docker test</h1></a>
+</div>
+<body><h2>
+<form action= "/results" method="POST">
+<p>Name:<input name="name" type="text" /></p>
+<p><br /> <strong><em><input type="submit" /></em></strong></p>
+</form>
+</h2></body>
+</html>
+

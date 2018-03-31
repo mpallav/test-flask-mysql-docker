@@ -1,0 +1,34 @@
+
+body {
+   margin-left: 5%;
+   margin-right: 5%;
+   background-color:  #C6DDF9;
+   font-family:times;
+}
+.header {
+  border-bottom: 20px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 80px;
+  background-color: #C6DDF9;
+}
+
+.header h1 {
+  text-align: center;
+  background-color: #C6DDF9;
+  width: 100%;
+  height: 50px;
+  display: relative;
+  color:blue;
+  font-family:courier;
+}
+
+a:link {
+    text-decoration: none;
+}
+

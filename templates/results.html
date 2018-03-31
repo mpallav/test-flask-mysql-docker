@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<div class="header">
+ <a href="/"><img src="{{ url_for('static', filename='logo.png')}}" /></a>
+ <a href="/"><h1>Welcome to Docker test</h1></a>
+</div>
+
+<table class="centered thick-border">
+<div></h2>
+{% for row in results %}
+      <table>
+      <tr>
+         <td>{{ row }}</td>
+      </tr>
+      </table>
+{% endfor %}
+</h2></div>
+
